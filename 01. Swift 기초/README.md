@@ -18,11 +18,11 @@
 ## 콘솔 로그
 
 > 애플리케이션 내부 로직의 흐름을 알 수 있도록 출력해주는 정보를 말한다.
-> 
->`print(함수)`
+
+`print(함수)`
 public func print(iteas: Any..., separator: String = default, treminator: String = default)로 정의한다.
->
->`dump(함수)`
+
+`dump(함수)`
 print보다 자세히 정보를 출력한다.
 
 ----------------
