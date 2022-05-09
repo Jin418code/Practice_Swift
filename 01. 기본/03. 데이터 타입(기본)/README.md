@@ -26,7 +26,7 @@
 >  8진수 : 접두어 0o를 사용함 <br/>
 > 16진수 : 접두어 0x를 사용함 <br/>
 
-```
+```swift
 let decimalInteger: Int = 28
 let binaryInteger: Int = 0b11100
 let octalInterget: Int = 0o34
