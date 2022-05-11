@@ -5,6 +5,8 @@
 
 I'm just a noob now, but not for a long time! 🤩
 
+--------------------
+
 ## 스위프트의 기본
 
 🎉 01. [Swift의 기본](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/01.%20Swift%20%EA%B8%B0%EC%B4%88) <br/>
