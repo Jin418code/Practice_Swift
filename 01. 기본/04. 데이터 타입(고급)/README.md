@@ -64,7 +64,7 @@ print("이름: \(Eric.name), 나이: \(Eric.age), 신장: \(Eric.height)"
 ### 4.1. 배열(Array)
 - 'Array라는 키워드'와 '타입 이름'의 조합이다.
 - '대괄호([])'로 값을 묶어 배열을 표현한다.
-- _같은 타입의 데이터를 일렬로 나열한 후 순서대로 저장하는 형태의 타입_이다. 각기 다른 위치에 같은 값이 들어갈 수 있다.해당되는 인덱스를 넣어 가져올 수 있다. 잘못된 익덱스 접근은 익셉션 오류(Exception Error)가 발생한다. 맨 처음은 first, 맨 마지막은 last 프로퍼티를 통해 가져올 수 있다.
+- '같은 타입의 데이터를 일렬로 나열한 후 순서대로 저장하는 형태의 타입'이다. 각기 다른 위치에 같은 값이 들어갈 수 있다.해당되는 인덱스를 넣어 가져올 수 있다. 잘못된 익덱스 접근은 익셉션 오류(Exception Error)가 발생한다. 맨 처음은 first, 맨 마지막은 last 프로퍼티를 통해 가져올 수 있다.
 - count 프로퍼티 확인을 통해 배열에 몇개의 요소가 있는지 확인 가능하다.
 - C언어 배열처럼 버퍼(buffer)이다. 그러나 C언어처럼 고정되지 않고 버퍼의 크기를 필요에 따라 자동으로 조절해준다. 
 > firstIndex(Of:) : 해당 요소의 인덱스를 알아 낼 수 있음
@@ -74,7 +74,7 @@ print("이름: \(Eric.name), 나이: \(Eric.age), 신장: \(Eric.height)"
 ✏️ 배열 인덱스는 0부터 시작함!
 
 ```swift
-// [배열과 선언의 생성]
+// [배열과 선언의 생성]-----------
 
 // 대괄호를 사용하여 배열임을 표현합니다.
 var names: Array<String> = ["Jin", "chulsoo", "younghee", "Jack"]
@@ -90,10 +90,8 @@ var emptyArray: [Any] = []
 print(emptyArray.isEmpty)    // true
 print(names.count)           // 4
 
--------------
 
-
-// [배열의 사용]
+// [배열의 사용]----------
 
 print(names[2])
 names[2] = "Jenny"
@@ -124,14 +122,15 @@ print(names)           // "["happy", "Jenny", "Jack", "Jinhee", "Minsoo", "Elsa"
 
 ### 4.2. 딕셔너리(Dictionary)
 - 'Dictionary라는 키워드'와 '키의 타입'과 '값의 타입 이름'의 조합이다.
-- <U>요소들이 순서없이 키와 값의 쌍으로 구성되는 타입</U>이다
+- '요소들이 순서없이 키와 값의 쌍으로 구성되는 타입'이다
 - 딕셔너리 안에는 키가 하나이거나 여러 개일 수 있다.
 - 단, 하나의 딕셔너리 안에서는 같은 이름을 중복해서 사용할 수 없다.
 - 각 값에 키로 접근할 수 있다. 없는 키로 접근하면 오류 발생없이 nil로 반환한다. 
 > removeValue(forKey:) 메서드를 사용해 키에 해당하는 값이 제거된 후 반환된다.
 ```swift
-// typealias(타입 별칭)를 통해 더 단순하게 표현 가능함
+// [딕셔너리의 선언과 생성]---------
 
+// typealias(타입 별칭)를 통해 더 단순하게 표현 가능함
 typealias StringIntDictionary = [String: Int]
 
 ////키는 String, 값은 Int 타입인 빈 딕셔너리를 생성
@@ -150,9 +149,7 @@ print(numberForName.isEmpty)    //false
 print(numberForName.count)      // 3
 
 
------------
-
-
+// [딕셔너리의 사용]---------
 print(numberForName["chulsoo"])
 print(numberForName["minji"])
 
@@ -171,11 +168,12 @@ print(numberForName.removeValue(forKey: "jin"))
 // jin 키에 해당하는 값이 없으면 기본으로 0으로 반환됨
 print(numberForName["jin", default: 0])
 
+
 ```
 
 ### 4.3. 세트(Set)
 - 'Set라는 키워드'와 '타입 이름'의 조합이다. 
-- 같은 타임의 데이터를 순서 없이 하나의 묶음으로 저장하는 컬렉션 타입이다.
+- '같은 타임의 데이터를 순서 없이 하나의 묶음으로 저장하는 컬렉션 타입'이다.
 - 세트 내의 값은 모두 유일한 값, 즉 중복된 값이 존재하지 않는다.
 - 순서가 중요하지 않거나 각 요소가 유일한 값이어야 하는 경우에 사용한다.
 - 또는 해시 가능한 값(스위프트의 기본 데이터 타입은 모두 해시 가능한 값)이어야 한다.
@@ -185,6 +183,55 @@ print(numberForName["jin", default: 0])
 > remove(_:) : 요소 삭제 후 반환
 
 ```swift
-print 
+// [세트의 선언과 생성]----------
+var names: Set<String> = Set<String>()   // 빈 세트 생성
+var names: Set<String> = []              // 빈 세트 생성
 
+// Array와 마찬가지로 대괄호를 사용
+var names: Set<String> = ["jin", "chulsoo", "younghee", "jin"]
+
+// 그렇기에 타입 추론을 사용하면 컴파일러는 Set가 아닌 Array 타입으로 지정함
+var numbers = [100, 200, 300]
+print(type(of: numbers))    // Array<Int>로 나옴
+
+print(names.isEmpty)        // false
+print(names.count)          // 3 / 중복된 값은 허용되지 않아 4개가 아니라 3임
+
+
+// [세트의 사용]-----------
+names.insert("jenny")
+print(names.count)
+
+print(names.remove("chulsoo"))  // chulsoo 삭제
+print(names.remove("john"))     // nil
+
+
+// [세트의 활용 - 집합연산]---------
+let EnglishClassStudent: Set<String> = ["john", "chulsoo", "jin"]
+let KoreanClassStudnet: Set<String> = ["jenny", "jin", "chulsoo", "hana", "minsoo"]
+
+// 1. 교집합 = jin, chulsoo
+let intersectSet: Set<String> = EnglishClassStudent.intersection(KoreanClassStudnet)
+
+// 2. 여집합의 합(배타적 논리합) = john, jenny, hana, minsoo
+let symmetricDiffset: Set<String> = EnglishClassStudent.symmetricDifference(KoreanClassStudnet)
+
+// 3. 합집합 = minsoo, jenny john, jin, chulsoo, hana
+let unionSet: Set<String> = EnglishClassStudent.union(KoreanClassStudnet)
+
+// 4. 차집합 = john
+let subtractSet: Set<String> = EnglishClassStudent.subtracting(KoreanClassStudnet)
+// 4.1 차집합 순서 변경으로 값의 변화 = jenny, minsoo, hana
+let subtractSet: Set<String> = KoreanClassStudnet.subtracting(EnglishClassStudent)
+
+
+// [세트의 활용 - 포함관계 연산]
+let 새: Set<String> = ["비둘기", "닭", "기러기"]
+let 포유류: Set<String> = ["사자", "호랑이", "곰"]
+let 동물: Set<String> = 새.union(포유류)     // 새와 포유류의 합집합
+
+print(새.isDisjoint(with: 포유류))     // 서로 배타적인지 - true
+print(새.isSubset(of: 동물))          // 새가 동물의 부분집합인가? - true
+print(동물.isSuperset(of: 포유류))     // 동물은 포유류의 전체집합인가? - true
+print(동물.isSuperset(of: 새))        // 동물은 새의 전체집합인가? - true
 ```
