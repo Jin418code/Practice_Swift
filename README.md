@@ -5,8 +5,6 @@
 
 I'm just a noob now, but not for a long time! 🤩 
 
-<br/>
-
 --------------------
 
 ## 스위프트의 기본
