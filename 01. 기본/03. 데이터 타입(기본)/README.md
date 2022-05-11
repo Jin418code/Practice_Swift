@@ -24,13 +24,13 @@
 
 ### 진수에 따라 정수 표현이 바뀜
 > 10진수 : 평소 쓰는 방법이랑 같음 
-> - let decimalInteger: Int = 28
+> - let decimalInteger: Int = 28 <br/>
 >  2진수 : 접두어 0b를 사용함 
->  - let binaryInteger: Int = 0b11100
+>  - let binaryInteger: Int = 0b11100 <br/>
 >  8진수 : 접두어 0o를 사용함
->  - let octalInterget: Int = 0o34
+>  - let octalInterget: Int = 0o34 <br/>
 > 16진수 : 접두어 0x를 사용함
-> - let hexadecimalInteger: Int = 0x1c
+> - let hexadecimalInteger: Int = 0x1c 
 
 <br/>
 
