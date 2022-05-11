@@ -31,7 +31,7 @@ typealias YourInt = Int
 - 이름이 지정되지 않은 타입으로, 프로그래머가 마음대로 만드는 타입이다.
 - 지정된 데이터의 묶음으로 파이썬의 튜플과 유사하다.
 
-1 튜플 기본(익덱스 접근코드)
+1) 튜플 기본(익덱스 접근코드)
 ```swift
 var person: (String, Int, Double) = ("Jin", 28, 179)
 print("이름: \(person.0), 나이: \(person.1), 신장:\(person.2)")
