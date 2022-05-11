@@ -23,7 +23,6 @@ typealias YourInt = Int
 // MyInt, YourInt 둘다 같은 Int를 표현하는 방법
 ```
 
-
 <br/>
 
 -------------
@@ -63,7 +62,8 @@ print("이름: \(Eric.name), 나이: \(Eric.age), 신장: \(Eric.height)"
 - 배열, 딕셔너리, 세트 등이 있다. 
 
 ### 4.1. 배열(Array)
-- 대괄호([])로 값을 묶어 배열을 표현한다.
+- 'Array라는 키워드'와 '타입 이름'의 조합이다.
+- '대괄호([])'로 값을 묶어 배열을 표현한다.
 - count 프로퍼티 확인을 통해 배열에 몇개의 요소가 있는지 확인 가능하다.
 - C언어 배열처럼 버퍼(buffer)이다. 그러나 C언어처럼 고정되지 않고 버퍼의 크기를 필요에 따라 자동으로 조절해준다. 
 - 같은 타입의 데이터를 일렬로 나열한 후 순서대로 저장하는 형태의 타입이다. 각기 다른 위치에 같은 값이 들어갈 수 있다.해당되는 인덱스를 넣어 가져올 수 있다. 잘못된 익덱스 접근은 익셉션 오류(Exception Error)가 발생한다. 맨 처음은 first, 맨 마지막은 last 프로퍼티를 통해 가져올 수 있다.
@@ -76,8 +76,8 @@ print("이름: \(Eric.name), 나이: \(Eric.age), 신장: \(Eric.height)"
 ```swift
 // [배열과 선언의 생성]
 
-`// 대괄호를 사용하여 배열임을 표현합니다.
-var names: Array<String> = ["Jin", "chulsoo", "younghee", "Jack"]`
+// 대괄호를 사용하여 배열임을 표현합니다.
+var names: Array<String> = ["Jin", "chulsoo", "younghee", "Jack"]
 
 // 위 선언과 정확히 동일한 표현입니다. [String]은 Arry<String>의 축약 표현임.
 var names: [String] = ["Jin", "chulsoo", "younghee", "Jack"]
@@ -123,14 +123,65 @@ print(names)           // "["happy", "Jenny", "Jack", "Jinhee", "Minsoo", "Elsa"
 ```
 
 ### 4.2. 딕셔너리(Dictionary)
-- 요소들이 키와 쌍으로 구성되는 타입이다
+- 'Dictionary라는 키워드'와 '키의 타입'과 '값의 타입 이름'의 조합이다.
+- 요소들이 순서없이 키와 값의 쌍으로 구성되는 타입이다
 - 딕셔너리 안에는 키가 하나이거나 여러 개일 수 있다.
 - 단, 하나의 딕셔너리 안에서는 같은 이름을 중복해서 사용할 수 없다.
 - 각 값에 키로 접근할 수 있다. 없는 키로 접근하면 오류 발생없이 nil로 반환한다. 
 - removeValue(forKey:) 메서드를 사용해 키에 해당하는 값이 제거된 후 반환된다.
+```swift
+// typealias(타입 별칭)를 통해 더 단순하게 표현 가능함
 
+typealias StringIntDictionary = [String: Int]
+
+////키는 String, 값은 Int 타입인 빈 딕셔너리를 생성
+var numberForName: Dictionary<String, Int> = Dictionary<String, Int>()
+
+//// 위 선언과 같은 표현
+var numberForName: [String: Int] = [String: Int]()
+
+// 위 코드와 같은 동작을 함
+var naumberForName: StringIntDictionary = StringIntDictionary()
+
+// 딕셔너리의 키와 값을 정확히 명시했다면 [:]만으로도 빈 딕셔너리를 생성 가능함
+var numberForName: [String: Int] = ["jin": 100, "chulsoo": 200, "jenny":300]
+
+print(numberForName.isEmpty)    //false
+print(numberForName.count)      // 3
+
+
+-----------
+
+
+print(numberForName["chulsoo"])
+print(numberForName["minji"])
+
+numberForName["chulsoo"] = 150  // 원래의 값 200을 150으로 바꿈
+print(numberForName["chulsoo"])
+
+numberForName["max"] = 999      // max라는 키로 999라는 값을 추가함
+print(numberForName["max"])     // 999
+
+print(numberForName.removeValue(forKey: "jin"))
+
+// 위에서 jin에 해당하는 값이 이미 삭제되었으므로 nil로 변환됨
+// 키에 해당하는 값이 없으면 기본값으로 돌려주게 되어 있음
+print(numberForName.removeValue(forKey: "jin"))
+
+// jin 키에 해당하는 값이 없으면 기본으로 0으로 반환됨
+print(numberForName["jin", default: 0])
+
+```
 
 ### 4.3. 세트(Set)
+- 'Set라는 키워드'와 '타입 이름'의 조합이다. 
+- 같은 타임의 데이터를 순서 없이 하나의 묶음으로 저장하는 컬렉션 타입이다.
+- 세트 내의 값은 모두 유일한 값, 즉 중복된 값이 존재하지 않는다.
+- 순서가 중요하지 않거나 각 요소가 유일한 값이어야 하는 경우에 사용한다.
+- 또는 해시 가능한 값(스위프트의 기본 데이터 타입은 모두 해시 가능한 값)이어야 한다.
+- 배열과 마찬가지로 대괄호([])로 값을 묶어 표현한다. 그러나 배열과 달리 줄여서 표현할 수 있는 축약형(예: Array<Int>를 [Int])이 없다.
+- isEmpty 프로퍼티를 통해 비어있는지 확인할 수 있고, count프로퍼티를 통해 갯수를 확인 가능하다.
 
-
-
+```swift
+print 
+```
