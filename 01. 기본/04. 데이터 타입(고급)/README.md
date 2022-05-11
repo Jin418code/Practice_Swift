@@ -76,8 +76,8 @@ print("이름: \(Eric.name), 나이: \(Eric.age), 신장: \(Eric.height)"
 ```swift
 // [배열과 선언의 생성]
 
-// 대괄호를 사용하여 배열임을 표현합니다.
-var names: Array<String> = ["Jin", "chulsoo", "younghee", "Jack"]
+`// 대괄호를 사용하여 배열임을 표현합니다.
+var names: Array<String> = ["Jin", "chulsoo", "younghee", "Jack"]`
 
 // 위 선언과 정확히 동일한 표현입니다. [String]은 Arry<String>의 축약 표현임.
 var names: [String] = ["Jin", "chulsoo", "younghee", "Jack"]
@@ -123,7 +123,12 @@ print(names)           // "["happy", "Jenny", "Jack", "Jinhee", "Minsoo", "Elsa"
 ```
 
 ### 4.2. 딕셔너리(Dictionary)
-- 
+- 요소들이 키와 쌍으로 구성되는 타입이다
+- 딕셔너리 안에는 키가 하나이거나 여러 개일 수 있다.
+- 단, 하나의 딕셔너리 안에서는 같은 이름을 중복해서 사용할 수 없다.
+- 각 값에 키로 접근할 수 있다. 없는 키로 접근하면 오류 발생없이 nil로 반환한다. 
+- removeValue(forKey:) 메서드를 사용해 키에 해당하는 값이 제거된 후 반환된다.
+
 
 ### 4.3. 세트(Set)
 
