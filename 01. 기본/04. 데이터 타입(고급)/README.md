@@ -125,3 +125,58 @@ var names: Set<String> = ["jin", "chulsoo", "younghee", "jin"]
 var numbers = [100, 200, 300]
 print(type(of: numbers))    // Array<Int>로 나옴
 ```
+  
+-------------
+
+## 5. 열거형(enum)
+- 연관된 항목들을 묶어서 표현할 수 있는 타입이다.
+- 특정 타입들을 표시할 때 사용하기 좋다.
+```swift
+enum MediaType
+  case audio
+  case video
+var mediaType: MediaType = .audio
+```
+- 열거형은 배열이나 딕셔너리와 달리 프로그래머가 정의해준 항복 값 외에는 추가/수정이 불가능하다.
+	- 제한된 선택지를 주고 싶을 때
+	- 정해진 값 외에는 입력받고 싶지 않을 때
+	- 예상된 입력 값이 한정되어 있을 때
+- 열거형의 예로는
+  	- 무선통신 방식 : WiFi, 블루투스, LTE 등
+  	- 학생 : 초등학생, 중학생, 고등학생 등
+  	- 지역 : 강원도, 경기도, 경상도 등
+- 스위프트에서의 열거형은 고유의 타입으로 인정되어 안정적이다. 즉 에러를 줄일 수 있다.
+- 원시 값(Raw Value)의 형태로 (정수, 실수, 문자 등) 실제 값을 가질 수도 있고, 
+  연관 값(Associated Values)을 이요하여 다른 언어의 공용체와 같은 역할이 가능하다.
+
+  
+### 5.1. 기본 열거형
+- 'enum'이라는 키워드로 선언한다.
+```swift
+enum School {
+    case primary
+    case elementary
+    case middle
+    case high
+    case college
+    case university
+}
+
+// 각 항목은 그 자체가 고유의 값이며, 한 줄에 모두 표현 가능하다.
+
+enum School {
+    case primary, elementary, middle, high, college, university
+}
+
+// 열거형 변수의 생성 및 값 변경
+var highestEducationLevel: School = School.university
+
+// 위 코드와 같은 표현
+var highestEducationLevel: school = .university
+
+// 같은 타임인 School 내부의 항목으로만 highestEducationLevel의 값을 변경 가능함
+highestEducationLevel = .graduate
+```
+
+### 5.2. 원시 값
+- 
