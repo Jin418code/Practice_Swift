@@ -21,14 +21,6 @@
 - (-)부호를 포함하지 않는 0을 포함한 양의 정수를 뜻함
 - UInt는 부호없는 정수 타입이 필요한 
 
-// 진수별 정수 표현
-
-let decimalInteger: Int = 28
-let binaryInteger: Int = 0b11100
-let octalInterget: Int = 0o34
-let hexadecimalInteger: Int = 0x1c
-```
-
 <br/>
 
 ### 진수에 따라 정수 표현이 바뀜
@@ -37,12 +29,11 @@ let hexadecimalInteger: Int = 0x1c
 >  8진수 : 접두어 0o를 사용함 <br/>
 > 16진수 : 접두어 0x를 사용함 <br/>
 
-```swift
-let decimalInteger: Int = 28
-let binaryInteger: Int = 0b11100
-let octalInterget: Int = 0o34
-let hexadecimalInteger: Int = 0x1c
-```
+// 진수별 정수 표현
+- let decimalInteger: Int = 28
+- let binaryInteger: Int = 0b11100
+- let octalInterget: Int = 0o34
+- let hexadecimalInteger: Int = 0x1c
 
 <br/>
 
