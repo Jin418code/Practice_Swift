@@ -70,7 +70,7 @@ print("이름: \(Eric.name), 나이: \(Eric.age), 신장: \(Eric.height)"
 > firstIndex(Of:) : 해당 요소의 인덱스를 알아 낼 수 있음<br/>
 > append(_:) : 맨 뒤에 요소 추가<br/>
 > insert(_:at:) : 중간에 요소 삽입<br/>
-> remove(_:) : 요소 삭제
+> remove(_:) : 요소 삭제<br/>
 ✏️ 배열 인덱스는 0부터 시작함!
 
 ```swift
