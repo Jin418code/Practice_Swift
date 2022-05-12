@@ -31,7 +31,7 @@ typealias YourInt = Int
 - 이름이 지정되지 않은 타입으로, 프로그래머가 마음대로 만드는 타입이다.
 - 지정된 데이터의 묶음으로 파이썬의 튜플과 유사하다.
 
-1) 튜플 기본(익덱스 접근코드)
+1 튜플 기본(익덱스 접근코드)
 ```swift
 var person: (String, Int, Double) = ("Jin", 28, 179)
 print("이름: \(person.0), 나이: \(person.1), 신장:\(person.2)")
@@ -112,7 +112,7 @@ let someValue: String = initalizedDictionary["name"]
 ```
 ### 4.3. 세트(Set)
 - 'Set라는 키워드'와 '타입 이름'의 조합이다. 
-- '같은 타의 데이터를 순서 없이 하나의 묶음으로 저장하는 컬렉션 타입'이다.
+- '같은 타임의 데이터를 순서 없이 하나의 묶음으로 저장하는 컬렉션 타입'이다.
 - 세트 내의 값은 모두 유일한 값, 즉 중복된 값이 존재하지 않는다.
 - 순서가 중요하지 않거나 각 요소가 유일한 값이어야 하는 경우에 사용한다.
 - 또는 해시 가능한 값(스위프트의 기본 데이터 타입은 모두 해시 가능한 값)이어야 한다.
@@ -201,5 +201,65 @@ var highestEducationLevel: school = .university
 highestEducationLevel = .graduate
 ```
 
-### 5.2. 원시 값
-- 
+### 5.2. 원시 값(Raw Value)
+- rawValue라는 프로퍼티를 열거형 이름 오른쪽에 명시해주면 된다.
+- 원시 값은 열거형의 선언에서 유일해야 하며 중복되면 안된다.
+- 열거형이 정수형이나 문자열 타입의 원시 값을 갖는다면, 각각의 case에 원시 값을 할당하지 않아도 된다. 0이 첫벗째 case의 원시 값으로 할당되어 1씩 추가되는 오름차순으로 할당된다.
+```swift
+let highestEducationLevel: School = School.university
+print ("저의 최종학력은 \(highestEducationLevel.rawValue) 졸업입니다.")
+```
+
+### 5.3. 연관 값
+- 연관 값은 소괄호(())로 묶어 표현한다.
+```swift
+enum MainDish {
+    case pasta(taste: String)
+    case pizza(dough: String, topping: String)
+    case chicken(withSauce: Bool)
+    case rice
+}
+```
+
+### 5.4. 항목 순회
+- Castlerable 프로토콜을 사용한다.
+  - 열거형의 모든 케이스를 알아야 할 때 열거형의 이름 뒤에 콜론(:), 한 칸 띄우고, Castlerable를 입력한다.
+```swift
+enum School: CaseIterable {
+    case primary
+    case elementary
+    case middle
+    case high
+    case college
+    case university
+}
+
+let allCases: [School] = School.allCases
+print(allCases)
+// School.primary, School.elementary, School.middle, School.high, School.college, School.university
+```
+
+### 5.5. 순환 열거형
+- indirect 키워드를 사용한다.
+- 특정 항목에만 적용하고 싶다면 case 키워드 앞에 indirect, 열거형 전체에 적용하고 싶으면 enum 키워드 앞에 indirect를 붙이면 된다.
+```swift
+// 특정 항목에 순환 열거형 항목 명시
+enum ArithmeticExpression {
+    case number(Int)
+    indirect case addition(ArithmeticExpression, ArithmeticExpression)
+    indirect case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+```
+```swift
+// 열거형 전체에 순환 열거형 명시
+indirect enum ArithmeticExpression {
+    case number(Int)
+    case addition(ArithmeticExpression, ArithmeticExpression)
+    case multiplication(ArithmeticExpression, ArithmeticExpression)
+}
+```
+
+### 5.6. 비교 가능한 열거형
+- Comparable 프로토콜을 채택하면 준수하는 열거형은 각 케이스를 비교할 수 있다.
+- 앞에 위치한 케이스가 더 작은 값이 된다.
+- case의 순서에 따라 위치가 정해져서 값이 나온다.
