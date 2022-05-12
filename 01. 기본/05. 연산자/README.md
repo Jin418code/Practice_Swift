@@ -149,7 +149,7 @@ postfix operater **
 ### 3.3. 중위 연산자
 - 전위 연산자나 후위 연산자와 정의는 크게 다르지 않다. 다만 중위 연산자는 우선순위 그릅을 명시해줄 수 있다.
 ```swift
-infix operator
+infix operator **
 ```
 ```swift
 precedencegroup 우선순위 그룹{
