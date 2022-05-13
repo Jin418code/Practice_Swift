@@ -59,6 +59,7 @@ print(sayHello(myName: "Jin", yourName: "Jenny"))
 ```
 <br/>
 ✏️ 매개변수 이름과 전달인자 레이블 지정할 때 표현법
+
       - from과 to라는 전달인자 레이블이 있다
 
 ```swift
