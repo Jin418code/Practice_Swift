@@ -131,8 +131,8 @@ let setB: Set<Int> = [3, 4, 5, 6, 7]
 // 집합 메서드
 let sortedUnion: [Int] = union.sorted()
 // 같은 타입의 배열로 바뀜 [1,2,3,4,5,6,7]
-	
-let union: Set<Int> = setA.union(setB)  // 합집합 {2,4,5,6,7,3,1,} 위랑 순서가 다르게 값이 나옴
+let union: Set<Int> = setA.union(setB) 
+// 합집합 {2,4,5,6,7,3,1,} 위랑 순서가 다르게 값이 나옴
 let intersection: Set<Int> = setA.intersection(setB) // 교집합
 let subtraction: Set<Int> = setA.subtractoin(setB) // 차집합
 ```
