@@ -38,6 +38,8 @@ func greeting(friend: String, me: String = "Jin" {
 ```
 
 ### 2.2. 매개변수
+- 매개 변수가 여러개 필요한 함수에는 쉼표(,)로 구분한다.
+- 매개 변수 이름을 붙여주고 콜론(:)을 적어준 후 전달인지를 적는다. 이렇게 호출 시에 매개변수에 붙이는 이름을 매개변수 이름(parameter name)이라고 한다.
 - 함수에 매개변수가 필요 없다면 매개변수를 공란으로 비워둔다
 ```swift
 func helloWorld() -> String {
@@ -46,8 +48,6 @@ func helloWorld() -> String {
 
 print(helloWorld())      // Hello, world!
 ```
-- 매개 변수가 여러개 필요한 함수에는 쉼표(,)로 구분한다.
-- 매개 변수 이름을 붙여주고 콜론(:)을 적어준 후 전달인지를 적는다. 이렇게 호출 시에 매개변수에 붙이는 이름을 매개변수 이름(parameter name)이라고 한다.
 - 매개변수가 여러 개인 함수의 정의와 사용
 ```swift
 func sayHello(myName: String, yourName: String) -> String {
