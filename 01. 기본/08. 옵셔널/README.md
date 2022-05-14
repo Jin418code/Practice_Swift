@@ -13,14 +13,20 @@
 - 값이 없는 옵셔널 변수 또는 상수에 접근하려면 런타임 오류가 발생한다.
 - 옵셔널을 사용하는 상황
    - 함수의 전달인자 값이 잘못 된 경우, 제대로 처리 못했음을 nil을 반환하여 표현한다.
+
 <br/>
+
 - 오류가 발생하는 nil 할당
+
 ```swift
 var myname: String = "Jin"
 myName = nil        // 오류 발생
 // nil은 옵셔널로 선언된 곳에서만 사용 가능
 ```
+
 - 옵셔널 변수의 선언 및 nil 할당
+
+
 ```swift
 var myName: String? = "Jin"
 // var myName: Optional<String>과 같음
