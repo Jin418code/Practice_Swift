@@ -1,8 +1,14 @@
 # 흐름 제어
 - 특정 조건에서 코드를 실행해야 하는 상황, 실행하지 말아야 하는 상황, 특정 명령어를 반복해서 실행해야 하는 상황도 발생한다. 이럴때 사용하는 것이 조건문과 반복문이다.
 
+<br/>
+
+--------------
+
 ## 1. 조건문
 - if 구문, switch 구문이 있다.
+
+<br/>
 
 ### 1.1. if 구문
 - if, else 등의 키워드를 사용하며 스위프트의 if 구문은 조건의 값이 꼭 __Bool 타입__이어야 한다.
@@ -24,6 +30,8 @@ if first > second {
 }
 // first < second
 ```
+
+<br/>
 
 ### 1.2. switch 구문
 - switch 구문도 소괄호(()) 생략 가능하다.
@@ -48,9 +56,12 @@ switch 입력 값 {
       실행 구문
 }
 ```
+
+<br/>
+
 #### if문을 switch문으로 바꿔보기
+- if문
 ```swift
-// if문
 func loveCalculator() {
     let loveScore = Int.random(in: 0...100)
 
@@ -65,8 +76,8 @@ func loveCalculator() {
 loveCalculator()
 ```
 ↓
+- switch문
 ```swift
-// switch문
 func loveCalculator() {
     let loveScore = Int.random(in: 0...100)
     
@@ -92,6 +103,8 @@ loveCalculator()
 ## 2. 반복문
 - 배열과 같은 시퀀스, 순서가 있는 데이터는 반복문으로 편하게 처리 할 수 있다.
 
+<br/>
+
 ### 2.1. for-in 구문
 - for-in 반복 구문은 반복적인 데이터나 시퀀스를 다룰 때 사용한다.
 - for '상수' in ( )...( ) 
@@ -101,10 +114,13 @@ for 임시 상수 in 시퀀스 아이템 {
 }
 ```
 
+<br/>
+
 ### 2.2. while 구문
 - 특정 조건(Bool 타입)이 성립하는 한 블록 내부의 코드를 반복해서 실행한다.
 - for-in 구문과 마간가지로 continue, break 등의 제어 키워드 사용이 가능하다.
 
+<br/>
 
 ### 2.3. repeat-while 구문
 - repeat 블록의 코드를 최초 1회 실행 후, while 다음의 조건이 성립하면 블록 내부의 코드를 반복 실행한다.
