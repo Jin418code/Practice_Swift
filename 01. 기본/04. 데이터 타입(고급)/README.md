@@ -4,10 +4,10 @@
 - 처음 스위프트를 발표할 때 강조했던 안전성(Safe)이 가장 뚜렷하게 나오는 부분이다. <br/>
 - 스위프트는 타입에 굉장히 민감하고 엄격하다. 서로 다른 타입끼리의 데이터 교환은 꼭 타입캐스팅(Type-Casting, 행변환)을 거쳐야한다. 새로운 인스턴스를 생성하여 할당하는 것이다.
 
-### 데이터 타입 안심이란
+### 1.1. 데이터 타입 안심이란
 - 스위프트는 컴파일 오류로 서로 다른 타입의 값 할당 실수를 줄일 수 있다. 이를 타입확인이라 하며 런타임 오류를 피할 수 있다.
 
-### 타입 추론
+### 1.2. 타입 추론
 - 변수나 상수를 명시하지 않아도 컴파일러가 할당된 값을 기준으로 판단후 결정한다.
 
 <br/>
@@ -31,18 +31,24 @@ typealias YourInt = Int
 - 이름이 지정되지 않은 타입으로, 프로그래머가 마음대로 만드는 타입이다.
 - 지정된 데이터의 묶음으로 파이썬의 튜플과 유사하다.
 
-1 튜플 기본(익덱스 접근코드)
+<br/>
+
+- 튜플 기본(익덱스 접근코드)
 ```swift
 var person: (String, Int, Double) = ("Jin", 28, 179)
 print("이름: \(person.0), 나이: \(person.1), 신장:\(person.2)")
 ```
 
-2) 튜플 요소 이름 지정(각각의 인덱스에 이름 짓기)
+<br/>
+
+- 튜플 요소 이름 지정(각각의 인덱스에 이름 짓기)
 ```swift
 var person: (name: String, age: Int, height: Double) = ("Jin", 28, 179)
 ```
 
-3) 튜플 별칭 지정
+<br/>
+
+- 튜플 별칭 지정
 ```swift
 typealias PersonTuple = (name: String, age: Int, height: Double)
 
@@ -59,7 +65,11 @@ print("이름: \(Eric.name), 나이: \(Eric.age), 신장: \(Eric.height)"
 
 ## 4. 컬렉션형
 - 데이터를 묶어서 저장하고 관리할 수 있는 타입들을 말한다
-- 배열, 딕셔너리, 세트 등이 있다. 
+   - Array = 순서가있는 리스트 컬렉션
+   - Dictionary = 키와 값의 쌍으로 이루어진 컬렉션
+   - Set = 순서가 없고, 멤버가 유일한 컬렉션
+
+<br/>
 
 ### 4.1. 배열(Array)
 - 'Array라는 키워드'와 '타입 이름'의 조합이다.
@@ -88,6 +98,8 @@ var emptyArray: [Any] = [Any]()        // Any 데이터를 요소로 갖는 빈 
 var emptyArray: [Any] = Array<Any>()   // 위 선언과 정확히 같은 동작을 하는 코드임.
 ```
 
+<br/>
+
 ### 4.2. 딕셔너리(Dictionary)
 - 'Dictionary라는 키워드'와 '키의 타입'과 '값의 타입 이름'의 조합이다.
 - '대괄호([])'로 딕셔너리를 표현한다.
@@ -111,6 +123,9 @@ let initalizedDictionary: [String: String] = ["name": "jin", "gender": "male"]
 let someValue: String = initalizedDictionary["name"]
 //딕셔너리의 키인 "name"에 해당하는 값이 있을 수도 있고 없을수도 있는 그런 불확실성에 의해 작동 되지 않음. 이건 옵셔널에서 더 다룰 예정.
 ```
+
+<br/>
+
 ### 4.3. 세트(Set)
 - 'Set라는 키워드'와 '타입 이름'의 조합이다. 
 - 배열과 마찬가지로 대괄호([])로 값을 묶어 표현한다. 그러나 배열과 달리 줄여서 표현할 수 있는 축약형(예: Array<Int>를 [Int])이 없다.
@@ -149,7 +164,9 @@ print(type(of: numbers))    // Array<Int>로 나옴
 print(names.isEmpty)        // false
 print(names.count)          // 중복된 값(jin이 2개)은 허용되지 않아 4개가 아니라 3임
 ```
-  
+
+<br/>
+
 -------------
 
 ## 5. 열거형(enum)
@@ -173,7 +190,8 @@ var mediaType: MediaType = .audio
 - 원시 값(Raw Value)의 형태로 (정수, 실수, 문자 등) 실제 값을 가질 수도 있고, 
   연관 값(Associated Values)을 이요하여 다른 언어의 공용체와 같은 역할이 가능하다.
 
-  
+<br/>
+
 ### 5.1. 기본 열거형
 - 'enum'이라는 키워드로 선언한다.
 ```swift
@@ -211,6 +229,8 @@ let highestEducationLevel: School = School.university
 print ("저의 최종학력은 \(highestEducationLevel.rawValue) 졸업입니다.")
 ```
 
+<br/>
+
 ### 5.3. 연관 값
 - 연관 값은 소괄호(())로 묶어 표현한다.
 ```swift
@@ -221,6 +241,8 @@ enum MainDish {
     case rice
 }
 ```
+
+<br/>
 
 ### 5.4. 항목 순회
 - Castlerable 프로토콜을 사용한다.
@@ -239,6 +261,8 @@ let allCases: [School] = School.allCases
 print(allCases)
 // School.primary, School.elementary, School.middle, School.high, School.college, School.university
 ```
+
+<br/>
 
 ### 5.5. 순환 열거형
 - indirect 키워드를 사용한다.
@@ -259,6 +283,8 @@ indirect enum ArithmeticExpression {
     case multiplication(ArithmeticExpression, ArithmeticExpression)
 }
 ```
+
+<br/>
 
 ### 5.6. 비교 가능한 열거형
 - Comparable 프로토콜을 채택하면 준수하는 열거형은 각 케이스를 비교할 수 있다.
