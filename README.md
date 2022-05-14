@@ -25,8 +25,7 @@ I'm just a noob now, but not for a long time! 🤩
 
 ✅ 08. [옵셔널](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/08.%20%EC%98%B5%EC%85%94%EB%84%90) <br/>
 
- <br/>
- 
+
 ------------------------
 
 ## 객체지향 프로그래밍과 스위프트
@@ -40,8 +39,7 @@ I'm just a noob now, but not for a long time! 🤩
 
 🟩 12. [접근제어](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/12.%20%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4) <br/>
 
- <br/>
- 
+
 ------------------------
 
 ## 함수형 프로그래밍과 스위프트
@@ -54,15 +52,12 @@ I'm just a noob now, but not for a long time! 🤩
 
 🟩 16. [모나드](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/16.%20%EB%AA%A8%EB%82%98%EB%93%9C) <br/>
 
- <br/>
- 
+
 ------------------------
 
 ## 확장
 
 
-<br/>
- 
 ------------------------
 
 ## 스위프트 고급
