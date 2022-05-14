@@ -33,10 +33,10 @@ print보다 자세히 정보를 출력한다.
 ## 3. 문자열 보간법
 
 > 변수 또는 상수 등의 값을 문자열 내에 나타내고 싶을 때 사용한다. 
-> /(변수나 상수)의 형태로 표기하면 문자열로 치환된다. 치환은  customStringConvertible 프로토콜을 준수하는 description 프로퍼티로 구현한다.
+> \(변수나 상수)의 형태로 표기하면 문자열로 치환된다. 치환은  customStringConvertible 프로토콜을 준수하는 description 프로퍼티로 구현한다.
 
 ```swift
-let name: String = "Jin
+let name: String = "Jin"
 print("My name is \(name)")
 ```
 ----------------
