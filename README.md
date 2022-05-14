@@ -21,9 +21,9 @@ I'm just a noob now, but not for a long time! 🤩
 
 ✅ 06. [흐름제어](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/06.%20%ED%9D%90%EB%A6%84%20%EC%A0%9C%EC%96%B4) <br/>
 
-🟩 07. [함수](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/07.%20%ED%95%A8%EC%88%98) <br/>
+✅ 07. [함수](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/07.%20%ED%95%A8%EC%88%98) <br/>
 
-🟩 08. [옵셔널](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/08.%20%EC%98%B5%EC%85%94%EB%84%90) <br/>
+✅ 08. [옵셔널](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/08.%20%EC%98%B5%EC%85%94%EB%84%90) <br/>
 
 🟩 09. [구조체와 클래스](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/09.%20%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%99%80%20%ED%81%B4%EB%9E%98%EC%8A%A4) <br/>
 
