@@ -97,7 +97,28 @@ class 클래스 이름: 부모클래스 이름 {
    - 구조체는 값 타입이고, 클래스는 참조 타입이다.(무엇이 전달되느냐 차이)
    - 함수의 전달인자로 값 타입의 값을 넘긴다면, 전달될 값이 복사되어 전달된다.
    - 함수의 전달인자로 참조 타입을 넘기면, 값을 복사하지않고 참조(주소)가 전달된다.
-   - <br/>
+```swift
+// 예시 1
+// 구조체로 만든 경우 (위 생략)
+var iPhone1 = Phone(modelName: "iPhone 13", manufacturer: "Apple")
+var iPhone2 = iPhone1
+iPhone1.modelName = "iPhone 14"
+print(iPhone2.modelName)
+print(iPhone1.modelName)
+// iPhone 13 / iPhone 14
+// iPhone2는 iPhone1의 값을 '복사'했기에 이후 iPhone1의 값이 변경되어도 영향을 받지 않음. 
+
+// 클래스로 만든 경우 (위 생략)
+var jrDeveloper1 = iOSDeveloper(name: "John", hours: 8)
+var jrDeveloper2 = jrDeveloper1
+jrDeveloper1.name = "Billy"
+print(jrDeveloper1.name)
+print(jrDeveloper2.name)
+// Billy / Billy
+// jrDeveloper2는 jrDeveloper1을 '참조'했기에 이후 jrDeveloper1의 값이 바뀌면 jrDeveloper2의 값도 바뀜
+```
+
+<br/>
 
 -----------
 
