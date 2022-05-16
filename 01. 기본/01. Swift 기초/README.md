@@ -5,7 +5,7 @@
 ----------------
 
 ## 1. Swift?
-- 최초에는 'Safe, Modren, Powerful'을 특징으로 발표했지만 오픈소스로 전환하면서 Safe, Fast, Expressive로 변경했다.
+- 최초에는 'Safe, Modren, Powerful'을 특징으로 발표했지만 오픈소스로 전환하면서 'Safe, Fast, Expressive'로 변경했다.
 스위프트는 다중 패러다임 프로그래밍 언어지만 함수형과 프로토콜 지향 프로그래밍을 강조한다. 
 
 <br/>
