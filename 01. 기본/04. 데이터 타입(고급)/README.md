@@ -37,7 +37,7 @@ typealias YourInt = Int
 
 <br/>
 
-- 튜플 기본(익덱스 접근코드)
+- 튜플 기본(인덱스 접근코드)
 ```swift
 var person: (String, Int, Double) = ("Jin", 28, 179)
 print("이름: \(person.0), 나이: \(person.1), 신장:\(person.2)")
@@ -78,7 +78,7 @@ print("이름: \(Eric.name), 나이: \(Eric.age), 신장: \(Eric.height)"
 ### 4.1. 배열(Array)
 - 'Array라는 키워드'와 '타입 이름'의 조합이다.
 - '대괄호([])'로 값을 묶어 배열을 표현한다.
-- '같은 타입의 데이터를 일렬로 나열한 후 순서대로 저장하는 형태의 타입'이다. 각기 다른 위치에 같은 값이 들어갈 수 있다.해당되는 인덱스를 넣어 가져올 수 있다. 잘못된 익덱스 접근은 익셉션 오류(Exception Error)가 발생한다. 맨 처음은 first, 맨 마지막은 last 프로퍼티를 통해 가져올 수 있다.
+- '같은 타입의 데이터를 일렬로 나열한 후 순서대로 저장하는 형태의 타입'이다. 각기 다른 위치에 같은 값이 들어갈 수 있다.해당되는 인덱스를 넣어 가져올 수 있다. 잘못된 인덱스 접근은 익셉션 오류(Exception Error)가 발생한다. 맨 처음은 first, 맨 마지막은 last 프로퍼티를 통해 가져올 수 있다.
 - count 프로퍼티 확인을 통해 배열에 몇개의 요소가 있는지 확인 가능하다.
 - C언어 배열처럼 버퍼(buffer)이다. 그러나 C언어처럼 고정되지 않고 버퍼의 크기를 필요에 따라 자동으로 조절해준다. 
 
@@ -120,7 +120,7 @@ var anyDictionary: Dictionary<String, Any> = Dictionary<String, Any>()
 var anyDictionary: Dictionary<String, Any> = [String: Any]()
 var anyDictionary: [String: Any] = [String: Any]()
 var anyDictionaty: StringAnyDictionary = StringAnyDictionary()
-typealias SanyDictionaty = [String: Any] // typealias(타입 별칭)를 통해 더 단순하게 표현 가능함
+typealias anyDictionaty = [String: Any] // typealias(타입 별칭)를 통해 더 단순하게 표현 가능함
 
 let initalizedDictionary: [String: String] = ["name": "jin", "gender": "male"]
 //let으로 name이라는 키에 jin이라는 값이 할당되어있음
@@ -153,7 +153,7 @@ let sortedUnion: [Int] = union.sorted()
 let union: Set<Int> = setA.union(setB) 
 // 합집합 {2,4,5,6,7,3,1,} 위랑 순서가 다르게 값이 나옴
 let intersection: Set<Int> = setA.intersection(setB) // 교집합
-let subtraction: Set<Int> = setA.subtractoin(setB) // 차집합
+let subtraction: Set<Int> = setA.subtraction(setB) // 차집합
 ```
 ```swift
 var names: Set<String> = Set<String>()   // 빈 세트 생성
