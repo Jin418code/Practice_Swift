@@ -52,7 +52,7 @@ I'm just a noob now, but not for a long time! 🤩
 
 🟩 16. [모나드](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/16.%20%EB%AA%A8%EB%82%98%EB%93%9C) <br/>
 
-⭐️ [추가 개인 노트(기본)](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/%EC%B6%94%EA%B0%80%20%EB%85%B8%ED%8A%B8%20(%EA%B8%B0%EB%B3%B8)
+⭐️ [추가 개인 노트(기본)](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/%EC%B6%94%EA%B0%80%20%EB%85%B8%ED%8A%B8%20(%EA%B8%B0%EB%B3%B8)) <br/>
 
 
 ------------------------
