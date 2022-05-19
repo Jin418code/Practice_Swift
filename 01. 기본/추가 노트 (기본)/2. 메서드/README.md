@@ -50,3 +50,42 @@ Man.cM()
 Man.scM()
 // 위의 클래스가 직접 사용하는 메서드임
 ```
+
+## 2. 인스턴스 메서드
+- 인스턴스 레벨에서 동작하는 메서드임
+```swift
+var age: Int = 0
+// var 변수명: 자료형 = 초기값 
+
+var 인스턴스명: 클래스명 = 클래스명()
+// ()는 눈에 보이지 않는 default initializer를 나타냄
+// ': 클래스명'은 생략 가능
+```
+
+```swift
+class Man{
+    var age: Int = 1
+    var weight: Double = 3.5
+// 위 두 함수는 프로퍼티, 정확히는 저장 프로퍼티(stored property)
+    func display(){
+        print("나이 = \(age), 몸무게 = \(weight)")
+// display는 class(Man)이 사용하는 메서드(클래스 메서드)가 아님
+// 인스턴스(밑의 kim)이 사용할 인스턴스 메서드임
+    }
+}
+
+var kim: Man = Man() // 가능
+// 이렇게 사용해야함. 밑의 코드는 오류남
+// ()는 눈에 보이지 않는 생성자 default initializer를 나타냄
+var kim: Man // 불가능
+// Variable 'kim' used before being initialized 오류
+✏️ 
+var x: Int
+// 일반 자료형은 이와같이 선언이 가능하지만 위의 상황은 안됨
+
+kim.display()
+// display는 kim이라는 인스턴스가 사용한 인스턴스 메서드
+
+print(kim.age)
+// 함수 외부에서 프로퍼티까지 직접 접근이 가능함(이후 설명)
+```
