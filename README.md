@@ -33,7 +33,7 @@ I'm just a noob now, but not for a long time! 🤩
 
 ✅ 09. [구조체와 클래스](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/09.%20%EA%B5%AC%EC%A1%B0%EC%B2%B4%EC%99%80%20%ED%81%B4%EB%9E%98%EC%8A%A4) <br/>
 
-🟩 10. [프로퍼티와 메서드](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/10.%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C) <br/>
+✅ 10. [프로퍼티와 메서드](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/10.%20%ED%94%84%EB%A1%9C%ED%8D%BC%ED%8B%B0%EC%99%80%20%EB%A9%94%EC%84%9C%EB%93%9C) <br/>
 
 🟩 11. [인스턴스 생성 및 소멸](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/11.%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%EC%83%9D%EC%84%B1%20%EB%B0%8F%20%EC%86%8C%EB%A9%B8) <br/>
 
