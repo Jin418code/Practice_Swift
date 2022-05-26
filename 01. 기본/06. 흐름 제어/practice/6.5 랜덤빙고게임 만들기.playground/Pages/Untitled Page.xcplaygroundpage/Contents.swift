@@ -28,4 +28,15 @@ case _ where x < 0:
 default:
     break
 }
-// _ 빈 이름
+
+// 3
+var computer = Int.random(in: 1...10)
+var me = 5
+
+if computer > me {
+    print("up")
+} else if computer < me {
+    print("down")
+} else {
+    print("Bingo")
+}
