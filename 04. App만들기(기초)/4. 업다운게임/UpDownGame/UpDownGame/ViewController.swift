@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var numberLabel: UILabel!
+    // label들은 문자열로 만들어져있음
     
     var comNumber = Int.random(in: 1...10)
     // 컴퓨터가 랜덤으로 선택하게 하는 변수 생성(컴퓨터가 선택한 수를 저장하기위해)
@@ -57,6 +58,15 @@ class ViewController: UIViewController {
         } else {
             mainLabel.text = "Bingo!🤩"
         }
+        /*
+         다른 방법 제시(변수 myNumber)안 만든다면
+         숫자레이블에 있는 문자열 가져와 옵셔널 벗기기
+         guard let myNumString = numberLabel.text elst { return }
+         
+         문자열을 정수로 타입 변환
+         guard let myNumber = Int(myNumString) else { return }
+         */
+        
         
     }
     
