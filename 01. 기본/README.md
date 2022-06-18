@@ -28,7 +28,7 @@
 
 ✅ 11. [인스턴스 생성 및 소멸](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/11.%20%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%20%EC%83%9D%EC%84%B1%20%EB%B0%8F%20%EC%86%8C%EB%A9%B8) <br/>
 
-🟩 12. [접근제어](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/12.%20%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4) <br/>
+✅ 12. [접근제어](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/12.%20%EC%A0%91%EA%B7%BC%EC%A0%9C%EC%96%B4) <br/>
 
 
 ------------------------
