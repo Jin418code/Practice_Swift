@@ -44,13 +44,13 @@ I'm just a noob now, but not for a long time! 🤩
 
 ## 함수형 프로그래밍과 스위프트
 
-🟩 13. [클로저](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/13.%20%ED%81%B4%EB%A1%9C%EC%A0%80) <br/>
+✅ 13. [클로저](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/13.%20%ED%81%B4%EB%A1%9C%EC%A0%80) <br/>
 
-🟩 14. [옵셔널 체이닝과 빠른 종료](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/14.%20%EC%98%B5%EC%85%94%EB%85%88%20%EC%B2%B4%EC%9D%B4%EB%8B%9D%EA%B3%BC%20%EB%B9%A0%EB%A5%B8%20%EC%A2%85%EB%A3%8C) <br/>
+✅ 14. [옵셔널 체이닝과 빠른 종료](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/14.%20%EC%98%B5%EC%85%94%EB%85%88%20%EC%B2%B4%EC%9D%B4%EB%8B%9D%EA%B3%BC%20%EB%B9%A0%EB%A5%B8%20%EC%A2%85%EB%A3%8C) <br/>
 
-🟩 15. [맵, 필터, 리듀스](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/15.%20%EB%A7%B5%2C%20%ED%95%84%ED%84%B0%2C%20%EB%A6%AC%EB%93%80%EC%8A%A4) <br/>
+✅ 15. [맵, 필터, 리듀스](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/15.%20%EB%A7%B5%2C%20%ED%95%84%ED%84%B0%2C%20%EB%A6%AC%EB%93%80%EC%8A%A4) <br/>
 
-🟩 16. [모나드](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/16.%20%EB%AA%A8%EB%82%98%EB%93%9C) <br/>
+✅ 16. [모나드](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/16.%20%EB%AA%A8%EB%82%98%EB%93%9C) <br/>
 
 ⭐️ [추가 개인 노트(기본)](https://github.com/Jin418code/Studying_Swift/tree/main/01.%20%EA%B8%B0%EB%B3%B8/%EC%B6%94%EA%B0%80%20%EB%85%B8%ED%8A%B8%20(%EA%B8%B0%EB%B3%B8)) <br/>
 
